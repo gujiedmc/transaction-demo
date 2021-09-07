@@ -11,6 +11,8 @@
     <modules>
         <module>tx-single-spring</module>
         <module>tx-common</module>
+        <module>tx-xa-jdbc</module>
+        <module>tx-byte-tcc</module>
     </modules>
 
     <properties>
