@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
-@Compensable(interfaceClass = IAccountService.class, cancellableKey = "accountServiceCancel")
+@Compensable(interfaceClass = IAccountService.class, cancellableKey = "accountServiceCancel",confirmableKey = "accountServiceConfirm")
 @RestController
 public class ProviderController {
 	@Autowired

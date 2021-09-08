@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
-@Compensable(interfaceClass = ITransferService.class, cancellableKey = "transferServiceCancel")
+@Compensable(interfaceClass = ITransferService.class, cancellableKey = "transferServiceCancel",confirmableKey = "transferServiceConfirm")
 @RestController
 public class ConsumerController {
 	@Autowired
