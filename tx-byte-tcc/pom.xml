@@ -14,6 +14,8 @@
     <modules>
         <module>byte-tcc-provider</module>
         <module>byte-tcc-consumer</module>
+        <module>byte-tcc-cloud-consumer</module>
+        <module>byte-tcc-cloud-provider</module>
     </modules>
 
     <properties>
